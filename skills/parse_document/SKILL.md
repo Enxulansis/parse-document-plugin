@@ -1,6 +1,21 @@
 ---
 name: parse_document
-description: Parse PDF, DOCX, PPTX, XLSX, and image files (PNG, JPG, JPEG) into Markdown using the minerU toolchain. Trigger whenever the user wants to read, view, open, inspect, or extract content from any document file — even casual phrasing ("看看这个pdf", "读一下那个docx", "打开看看", "里面写了什么", "帮我查看", "提取文字"). If a file is binary (PDF, DOCX, PPTX, XLSX, images), Claude cannot read it directly, so this skill MUST be invoked first. Also triggers for: batch processing ("把所有pdf都解析"), legacy Office formats that won't open (.doc/.ppt/.xls "打不开"), academic/research workflows ("整理参考文献", "翻译这篇论文", "快速查看这篇论文", "用draw.io重绘这篇论文的流程图", "总结这篇论文的方法", "提取论文里的数据"), image text extraction, and any scenario where parsed document content is needed as input for another skill (e.g., generate_image) or downstream task (translate, summarize, analyze, redraw). This skill is often the REQUIRED FIRST STEP whenever the user wants to do anything with a binary document they cannot directly read. Do NOT trigger for plain-text formats (.md, .txt, .py, .json) that Claude can read directly.
+description: >
+  Parse PDF, DOCX, PPTX, XLSX, and image files (PNG, JPG, JPEG) into Markdown
+  using the minerU toolchain. Trigger whenever the user wants to read, view,
+  open, inspect, or extract content from any document file — even casual
+  phrasing ("看看这个pdf", "读一下那个docx", "打开看看", "里面写了什么", "帮我查看",
+  "提取文字"). If a file is binary (PDF, DOCX, PPTX, XLSX, images), Claude cannot
+  read it directly, so this skill MUST be invoked first. Also triggers for: batch
+  processing ("把所有pdf都解析"), legacy Office formats that won't open
+  (.doc/.ppt/.xls "打不开"), academic/research workflows ("整理参考文献",
+  "翻译这篇论文", "快速查看这篇论文", "用draw.io重绘这篇论文的流程图",
+  "总结这篇论文的方法", "提取论文里的数据"), image text extraction, and any
+  scenario where parsed document content is needed as input for another skill
+  (e.g., generate_image) or downstream task (translate, summarize, analyze,
+  redraw). This skill is often the REQUIRED FIRST STEP whenever the user wants
+  to do anything with a binary document they cannot directly read. Do NOT trigger
+  for plain-text formats (.md, .txt, .py, .json) that Claude can read directly.
 ---
 
 ## Document parsing with minerU
