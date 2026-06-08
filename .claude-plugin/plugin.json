@@ -1,0 +1,11 @@
+{
+  "name": "parse-document",
+  "description": "Parse PDF, DOCX, PPTX, XLSX, and image files into Markdown using minerU. Supports batch processing, legacy Office format auto-conversion, and academic workflow integration. Requires GPU + minerU conda environment.",
+  "author": {
+    "name": "Claude Code User"
+  },
+  "category": "productivity",
+  "homepage": "https://github.com/Enxulansis/parse-document-plugin",
+  "strict": false,
+  "skills": ["./parse_document"]
+}
