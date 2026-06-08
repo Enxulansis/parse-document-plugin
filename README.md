@@ -23,15 +23,28 @@ Claude Code plugin for parsing PDF, DOCX, PPTX, XLSX, and image files into Markd
 
 ## Installation
 
-```bash
-claude plugin install parse-document@Enxulansis/parse-document-plugin
-```
-
-Or install from local path:
+### Option 1: Manual install (current)
 
 ```bash
-claude plugin install ./parse_document-plugin
+# 1. Clone the repo
+git clone https://github.com/Enxulansis/parse-document-plugin.git
+
+# 2. Add as local marketplace
+claude plugin marketplace add ./parse-document-plugin --scope user
+
+# 3. Install the plugin
+claude plugin install parse-document@parse-document-plugin --scope user
 ```
+
+### Option 2: One-click install (coming soon)
+
+After marketplace registration, install with a single command:
+
+```bash
+claude plugin install parse-document@claude-plugins-official
+```
+
+*This plugin is pending submission to the official Claude Code plugin marketplace.*
 
 ## Usage
 
